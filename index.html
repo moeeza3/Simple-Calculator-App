@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+     
+    <form name="cal">
+      <div class="about-cal">
+        <p>calc</p>
+      </div>
+      <div class="result-container">
+        <input type="text" name="result" value="" id="result" placeholder="0" >
+      </div>
+      <div class="btn-container">
+       <div class="grid-container">
+         <div class="grid-item">
+          <input type="button" value="7" name="seven" class="item"  onclick="disNumber(7)">
+          <input type="button" value="8" name="eight" class="item" onclick="disNumber(8)">
+          <input type="button" value="9" name="nine" class="item" onclick="disNumber(9)">
+          <input type="button" value="DEL" name="delete" class="item same-color" onclick="removeNumb()">
+         </div>
+         <div class="grid-item">
+          <input type="button" value="4" name="four" class="item" onclick="disNumber(4)">
+          <input type="button" value="5" name="five" class="item" onclick="disNumber(5)">
+          <input type="button" value="6" name="six" class="item" onclick="disNumber(6)">
+          <input type="button" value="+" name="plus" class="item" onclick="disNumber('+')">
+         </div>
+         <div class="grid-item">
+          <input type="button" value="3" name="three" class="item" onclick="disNumber(3)"> 
+          <input type="button" value="2" name="two" class="item" onclick="disNumber(2)">
+          <input type="button" value="1" name="one" class="item" onclick="disNumber(1)">
+          <input type="button" value="-" name="minus" class="item" onclick="disNumber('-')">
+         </div>
+         <div class="grid-item">
+          <input type="button" value="." name="dot" class="item" onclick="disNumber('.')">
+          <input type="button" value="0" name="zero" class="item" onclick="disNumber(0)">
+          <input type="button" value="/" name="divide" class="item" onclick="disNumber('/')">
+          <input type="button" value="*" name="multiply" class="item" onclick="disNumber('*')">
+         </div>
+        
+        <div class="eval">
+        <input type="button" value="Reset" name="reset" class="item item-eval-btn same-color" onclick="clearScreen()">
+          <input type="button" value="=" name="equal" class="item item-eval-btn equal" onclick="solve()"> 
+        </div>
+       </div>
+      </div>
+    </form>
+
+
+ <script src="calculator.js"></script>
+</body>
+</html>
